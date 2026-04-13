@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'neonreg'; 
+    src: url('Neon-AI.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'neonit'; 
+    src: url('Neon-AI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '42reg'; 
+    src: url('42dotsans-regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '42med'; 
+    src: url('42dotsans-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '42bold'; 
+    src: url('42dotsans-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html{ 
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden; 
+    width: 100%;
+    background-color: #141313;
+    color: #EEEAEA;
+}
+h2 {
+    font-size: 80px;
+    font-family: "neonreg";
+      color: #D9BF2D; 
+}
+
+
+header {
+      font-family: "neonreg";
+    color: #141313;
+    background-color: #D9BF2D; 
+    height: 68px;
+    width: 100%;
+    
+    /* Centrado  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    margin: 0;
+    
+    letter-spacing: 8px; 
+    padding-left: 8px;   
+
+}
+
+
+.portada {
+    /*  alto de la pantalla */
+    height: 100vh; 
+    
+    /* imagen de fondo */
+    background-image: url('fondo.png'); 
+    background-size: cover;      
+    background-position: center; 
+
+    
+    /* Centrado del h1 */
+    display: flex;
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical */
+    margin-bottom: 0px;
+    
+  
+}
+
+.portada h1 {
+    font-family: 'neonit';
+font-size: 14vw;
+    color: #D9BF2D; 
+    text-transform: uppercase;
+    letter-spacing: 15px;
+
+    
+}
+
+
+.intro {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* espacio entre los dos bloques */
+    min-height: 60vh; 
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+ 
+}
+
+.intro-texto {
+    flex: 1; /* Ocupa la mitad del espacio */
+    text-align: left;
+    margin-top: 10px;
+    font-size: 52px;
+ margin-bottom: 5px;
+ padding-bottom: 5px;
+
+}
+
+.intro-texto h2 {
+
+margin-bottom: 10px;
+}
+
+
+
+.resumen {
+    font-family: "42med";
+    font-size: 28px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
+}
+
+.intro-texto ul {
+    list-style: none; 
+    padding: 0;
+
+}
+
+.intro-texto li {
+    font-family: "42bold"; 
+    font-size: 26px;
+    margin-bottom: 20px;
+
+}
+
+.intro-imagen {
+    flex: 1; /* Ocupa la otra mitad */
+    display: flex;
+    justify-content: flex-end; /*  la foto  a la derecha */
+
+}
+
+.intro-imagen img {
+    width: 75%; 
+    height: auto;
+   padding-bottom: 50px;
+}
+.indice li a {
+    text-decoration: none; 
+    color:#D9BF2D
+}
+
+.indice li a:hover {
+    color: #f08547;        
+    transform: translateX(10px); 
+}
+
+
+.volver-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;  
+    height: 60px;
+    margin-right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volver-arriba img {
+    width: 100%;    
+    height: auto;
+    display: block;
+
+    
+}
+
+.volver-arriba:hover {
+    transform: scale(1.1) translateY(-5px); 
+}
+.sobre-mi {
+     display: flex;
+    align-items: center; 
+    justify-content: space-between; /* espacio entre los dos bloques */
+    min-height: 60vh; 
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+}
+
+.sobre-mi-texto {
+    flex: 1;                
+    text-align: left;        
+}
+
+.sobre-mi h2 {
+    font-family: 'neonreg';
+    color: #D9BF2D;
+    margin-bottom: 20px;
+}
+
+.sobre-mi p {
+      font-family: "42med";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.destacado {     
+text-decoration: underline;
+    color: #D9BF2D;
+    text-align: center;
+    font-family: '42bold';
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.sobre-mi-imagen {
+    flex: 1;               
+    display: flex;
+
+}
+
+.sobre-mi-imagen img {
+    width: 100%;
+    max-width: 500px;        
+    height: auto;
+    display: block;
+}
+
+
+.fotografia-video {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+padding-top: 40px;
+
+}
+.fotografia-video h2{
+    margin-bottom: 0;
+}
+.texto-fotografia{
+    font-family: "42med";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; 
+}
+.galeria img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* no se deforma */
+}
+.arte-diseño {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+padding-top: 40px;
+}
+.arte-diseño h2 {
+margin-bottom: 0;
+}
+.texto-arte{
+    font-family: "42med";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto; 
+    margin-right: auto;
+    gap: 20px; /* Espacio  */
+    max-width: 800px;
+}
+.proyectos img {
+    width: 100%;            
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* no se deforma */
+}
+.experimental {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+padding-top: 40px;
+}
+.experimental h2 {
+margin-bottom: 50px;
+}
+.texto-experimental{
+    font-family: "42med";
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.contenedor-video {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     
+}
+
+footer {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 60px 10%;
+    margin-top: 80px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.info h3 {
+    font-family: 'neonit';
+    color: #D9BF2D;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-family: "42reg";
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.footer-links {
+   display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-top: 50px;
+    font-family: "42bold";
+}
+
+.footer-links a {
+    color:#D9BF2D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.footer-links img {
+    max-height: 100px;
+    max-width: 250px;
+    padding-top: 50px;
+}
+
+.footer-links a:hover {
+    border-bottom: 1px solid #D9BF2D;
+    padding-left: 5px;
+}
+
+ /* no pude hacer el @media screen porque me deformaba todo el codigo anterior :(  */
